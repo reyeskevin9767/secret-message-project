@@ -2,7 +2,12 @@
 document.querySelector('form').addEventListener('submit', (event) => {
   event.preventDefault();
 
-  const input = document.querySelector('input');
+  // Take value and turn into base64
+  const input = document.querySelector('#message-input');
+  const encrypted = btoa(input.value);
 
-  console.log(input.value);
+  // Create link
+  const linkInput = document.querySelector('#link-input');
+  linkInput.value = `${window.location}#${encrypted}`;
+  linkInput.select();
 });

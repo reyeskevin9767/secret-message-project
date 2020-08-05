@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <title>Secret Message Project</title>
   </head>
   <body>
@@ -12,9 +15,14 @@
         <div class="card-panel">
           <form>
             <label>Enter a Secret Message</label>
+            <input id="message-input" />
+            <button class="btn">Create</button>
           </form>
-          <input />
-          <button class="btn">Create</button>
+        </div>
+
+        <div>
+          Share this link with a friend
+          <input id="link-input" />
         </div>
       </div>
     </div>
