@@ -1,5 +1,6 @@
 const { hash } = window.location;
 
+//* Take hash and return message
 const message = atob(hash.replace('#', ''));
 
 if (message) {
@@ -20,7 +21,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
   const input = document.querySelector('#message-input');
   const encrypted = btoa(input.value);
 
-  // Create link
+  // Create link and append input to hash
   const linkInput = document.querySelector('#link-input');
   linkInput.value = `${window.location}#${encrypted}`;
   linkInput.select();
