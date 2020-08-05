@@ -1,3 +1,9 @@
+/* Style body */
 .row {
   margin-top: 25vh;
+}
+
+/* Style message */
+.h1 {
+  margin-top: 0;
 }
